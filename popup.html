@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Options</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/chromesearch.css" />
+    <!--    <link rel="stylesheet" type="text/css" href="options.css" />-->
+</head>
+<body class="grey">
+    <div class="container" id="main-container-pop">
+      <div class="row">
+          <div class="panel-group" id="accordion">
+              <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h4 class="panel-title text-center">
+                        <a class="green">
+                          Add a search term for this site?
+                        </a>
+                      </h4>
+                  </div>
+                  <div class="panel-body">
+                      <table id="table_popup" class="table">
+                          <tbody class="text-center">
+                              <tr>
+                                  <td>
+                                      <input style="width: 200px;" type="text" id="searchterm" name="SearchTerm" value=""><br>
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      <button class="btn btn-primary" id="searchp" style="margin:5 auto 10 auto; display:block; padding:5 10 5 10;">
+                        Search
+                      </button>
+                      <table id="table_popup" class="table">
+                          <tbody class="text-center">
+                              <tr>
+                                  <td class="white leftpop bottompop">
+                                    <input type="checkbox" id="always">
+                                    <label for="always" class="table_label">Always search using this?</label>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="white no-top-border leftpop">
+                                    <input type="checkbox" id="dont">
+                                    <label for="dont" class="table_label">Don't show this again.</label>
+                                  </td>
+                              </tr>
+                              <tr>
+                                  <td class="green no-top-border">
+                                    You can change the selections for this site under "Options".
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>
+          </div>
+    </div>
+</body>
+<script src="./js/popup_html_js.js"></script>
+<!-- <script src="./js/helper.js"></script>
+<script src="./js/search.js"></script>
+<script src="./js/popup.js"></script> -->
+<script src="jquery-1.11.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+</html>

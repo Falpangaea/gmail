@@ -1,0 +1,29 @@
+{
+  "name": "Sales Search",
+  "description": "Highlight, right click and select option to search.",
+  "version":"3.0.0",
+  "manifest_version": 2,
+  "icons": {
+    "48": "./images/ZT.ico",
+    "128": "./images/ZT.ico"
+  },
+  "permissions": [
+    "tabs",
+    "contextMenus",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["./css/chromesearch.css", "./css/reset.css"],
+      "js": ["./js/options.js"]
+    }
+  ],
+  "background": {
+    "page": "background.html"
+  },
+  "browser_action": {
+    "default_icon": "./images/ZT.ico",
+    "default_popup": "options.html"
+  }
+}
